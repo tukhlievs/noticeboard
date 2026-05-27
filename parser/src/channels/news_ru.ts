@@ -1,14 +1,15 @@
 import type { ChannelSeed } from "./index";
 
-// Новости на русском.
-// Username без @ префикса. Проверь существование через https://t.me/s/<username>
-// перед добавлением — у некоторых каналов превью отключено, парсер их пропустит.
-// Цель — 10 каналов. Пустые слоты помечены TODO.
+// Новости на русском. 10 каналов, все проверены через t.me/s/<username>.
 export const channels: ChannelSeed[] = [
-  { username: "tass_agency" },
-  { username: "rian_ru" },
-  { username: "rbc_news" },
-  { username: "meduzalive" },
-  { username: "lentachold" },
-  // TODO: ещё 5 каналов
+  { username: "lentachold", title: "Лентач" },
+  { username: "tass_agency", title: "ТАСС" },
+  { username: "rbc_news", title: "РБК. Новости. Главное" },
+  { username: "rian_ru", title: "РИА Новости" },
+  { username: "meduzalive", title: "Медуза — LIVE" },
+  { username: "forbesrussia", title: "Forbes Russia" },
+  { username: "kommersant", title: "Коммерсантъ" },
+  { username: "vedomosti", title: "ВЕДОМОСТИ" },
+  { username: "breakingmash", title: "Mash" },
+  { username: "interfaxonline", title: "Интерфакс" },
 ];

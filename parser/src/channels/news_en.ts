@@ -1,10 +1,15 @@
 import type { ChannelSeed } from "./index";
 
-// Новости на английском.
-// Цель — 10 каналов. Проверь t.me/s/<username> перед добавлением.
+// News in English. 10 channels, all verified via t.me/s/<username>.
 export const channels: ChannelSeed[] = [
-  { username: "reuters" },
-  { username: "BBCWorld" },
-  { username: "Bloomberg" },
-  // TODO: ещё 7 каналов
+  { username: "BBCWorld", title: "BBC News (World)" },
+  { username: "Bloomberg", title: "Bloomberg" },
+  { username: "nytimes", title: "The New York Times" },
+  { username: "TheEconomist", title: "The Economist" },
+  { username: "AssociatedPress", title: "Associated Press" },
+  { username: "cnnbrk", title: "CNN" },
+  { username: "AlJazeeraEnglish", title: "Al Jazeera English" },
+  { username: "skynews", title: "Sky News" },
+  { username: "FoxNews", title: "FOX News" },
+  { username: "thetimes", title: "The Times" },
 ];
