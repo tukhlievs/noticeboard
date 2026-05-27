@@ -1,0 +1,13 @@
+# Cloudflare Workers Python configuration
+name = "noticeboard-bot"
+main = "bot.py"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["python_workers"]
+
+[vars]
+# Mini App URL — обнови после деплоя Next.js на Cloudflare Pages
+MINI_APP_URL = "https://noticeboard.pages.dev"
+
+# Secrets задаются через `wrangler secret put`, НЕ в этом файле:
+#   wrangler secret put BOT_TOKEN
+#   wrangler secret put BOT_WEBHOOK_SECRET

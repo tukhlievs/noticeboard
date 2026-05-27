@@ -1,0 +1,16 @@
+name = "noticeboard-parser"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# Cron-trigger: каждые 5 минут. Изменить cron-выражение → новый интервал.
+# Cloudflare поддерживает до нескольких cron-триггеров даже на free-плане.
+[triggers]
+crons = ["*/5 * * * *"]
+
+# Vars — публичные, видны в коде воркера. Для секретов используй
+# `wrangler secret put NAME`. SUPABASE_URL не секрет, но кладу в secrets
+# заодно — проще управлять всем через wrangler.
+#
+# Secrets (через wrangler secret put):
+#   SUPABASE_URL
+#   SUPABASE_SERVICE_ROLE_KEY

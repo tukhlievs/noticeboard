@@ -1,0 +1,6 @@
+# Скопируй этот файл в .dev.vars (без .example) и заполни.
+# .dev.vars читается wrangler dev для локальной разработки.
+# В .gitignore прописан — не попадает в репо.
+
+BOT_TOKEN=replace-with-bot-token-from-botfather
+BOT_WEBHOOK_SECRET=replace-with-random-string-min-32-chars
